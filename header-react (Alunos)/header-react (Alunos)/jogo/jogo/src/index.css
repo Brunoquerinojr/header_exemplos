@@ -1,32 +1,42 @@
 /*  Estilos globais para centralizar todo o conteudo */
-body,
-html {
+body,html
+{
   height: 100%;
   margin: 0;
   display: flex;
+
+
+  /* Muda imagem de fundo do jogo */
+  background-image: url(assets/estrelas_jpg.jpg);
+
+/* ___________________________________ */
+
+
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
   font-family: Helvetica;
   text-align: center;
+  color: #ddd;
 }
 
 /* Estilos para cada quadrado */
 .square {
   width: 100px;
   height: 100px;
-  background-color: #ddd;
-  border: 1px solid #ccc;
+  background-color: #16165cb5;
+  border: 1px solid #32cd32;
   font-size: 32px;
   font-weight: bold;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 /* Estilos para o vencedor */
 .winner {
-  background-color: #ffcc00;
+  background-color: #29a129ba;
+  border-radius: 8px;
 }
 
 /* Estilos para o status do jogo */
@@ -34,7 +44,7 @@ html {
   margin: 20px 0 ;
   text-align: center;
   font-size: 24px;
-  color: #333;
+  color: #ddd;
 }
 
 /* Estilos para botão de reiniciar */
@@ -42,13 +52,15 @@ html {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 4px;
+  background-color: #32cd32;
+  color: #000;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 /* Estilos para o botãon de reinicar no hover */
 .reset-button:hover {
-  background-color: #0056b3;
+  background-color: #2bb42b;
 }
+
+
